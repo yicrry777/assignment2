@@ -1,0 +1,431 @@
+@charset "utf-8";
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    /*网页背景色*/
+    background-color: rgb(255, 198, 252);
+    margin: 0 auto;
+    width: 100%;
+}
+
+ol, ul, li {
+    /*列表标签清除样式*/
+    list-style-type: none;
+}
+
+a {
+    /*a连接设置样式*/
+    font-size: 1.1em;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+
+/*导航栏*/
+header {
+    width: 100%;
+    height: 50px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    background: white;
+}
+header > ul > li > a:hover {
+        color: rgb(179, 126, 178);
+
+}
+
+    header > img {
+        height: 50px;
+        width: 150px;
+    }    
+
+    header > ul {
+        margin-left: 320px;
+        width: 900px;
+        height: 50px;
+        line-height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+        header > ul > li {
+            display: block;
+            padding: 0 30px;
+            height: 50px;
+            z-index: 1;
+        }
+
+            header > ul > li:nth-child(4) {
+                text-align: center;
+                font-size: 1.1em;
+                font-weight: bold;
+                color: rgb(0, 0, 0);
+                cursor: pointer;
+            }
+
+                header > ul > li:nth-child(4):hover {
+                    color: rgb(179, 126, 178);
+                }
+
+                header > ul > li:nth-child(4) > .hidden {
+                    height: 0;
+                    overflow: hidden;
+                    transition: all .5s linear;
+                    background: rgba(255, 255, 255, 0.5);
+                }
+
+                    header > ul > li:nth-child(4) > .hidden > li {
+                        height: 45px;
+                    }
+
+                header > ul > li:nth-child(4):hover > .hidden {
+                    height: 135px;
+                }
+
+                header > ul > li:nth-child(4) > ul > li > a:hover {
+                    color: rgb(179, 126, 178);
+                }
+
+                header > ul > li:nth-child(4) > ul > li:hover {
+                    background-color: rgb(255, 255, 255);
+                }
+
+    header > .search {
+        margin-left: 10px;
+        margin-right: 0;
+        width: 400px;
+        height: 50px;
+        float: left;
+    }
+
+        header > .search > input {
+            width: 400px;
+            height: 40px;
+            border: 2px solid rgb(228, 180, 237);
+            border-right: 0;
+            padding-left: 100px;
+            color: gray;
+            font-size: 13px;
+        }
+
+.search > input:focus {
+    outline: medium;
+}
+
+.search > button {
+    width: 10%;
+    height: 1px;
+    margin-top: 10px;
+    float: left;
+}
+
+/*top*/
+.top {
+    width: 100%;
+    margin: auto;
+}
+
+    .top > ul {
+        width: 100%;
+        height: 300px;
+        margin: 0 auto;
+        display: block;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+    }
+
+        .top > ul > li {
+            width: 45%;
+            height: 100%;
+            display: inline-block;
+            align-items: center;
+            flex-direction: column;
+            justify-content: space-around;
+            margin: auto;
+            margin-left: 3%;
+        }
+
+            .top > ul > li > img {
+                width: 100%;
+                height: 100%;
+            }
+
+/*mian*/
+main {
+    margin: 0 auto;
+    width: 90%;
+    background-color: rgb(227, 222, 222,0.7);
+}
+    /*first*/
+    main > .first {
+        width: 80%;
+        height: 500px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+        main > .first > h4 {
+            border-left: solid 10px rgb(247, 181, 244);
+            color: #353535;
+            text-indent: 1em;
+            cursor: default;
+            font-size: 24px;
+        }
+
+        main > .first > div {
+            width: 100%;
+            height: 80%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background: white;
+            border-radius: 20px;
+            margin-top: 10px;
+            overflow: hidden;
+        }
+
+            main > .first > div > img {
+                width: 30%;
+                height: 100%;
+                float: left;
+                margin: auto;
+            }
+
+            main > .first > div > div {
+                width: 70%;
+                height: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+                flex-direction: column;
+                justify-content: center;
+                margin: 0 auto;
+                line-height: 30px;
+                background: rgb(255, 198, 252);
+            }
+
+                main > .first > div > div > p {
+                    height: auto;
+                    width: 90%;
+                    margin-left: 50px;
+                    margin-top: 10px;
+                    margin-bottom: 0;
+                    justify-content: center;
+                    /*text-indent: 2em;*/
+                    color: black;
+                    font-size: 20px;
+                    /*margin-bottom: 10px;*/
+                    /*font-weight: bold;*/
+                    font-style: italic;
+                    cursor: default;
+                }
+
+    /*second*/
+    main > .second {
+        width: 80%;
+        height: 500px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+        main > .second > h4 {
+            border-left: solid 10px rgb(247, 181, 244);
+            color: #353535;
+            text-indent: 1em;
+            cursor: default;
+            font-size: 24px;
+        }
+
+        main > .second > div {
+            width: 100%;
+            height: 80%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background: white;
+            border-radius: 20px;
+            margin-top: 10px;
+            overflow: hidden;
+        }
+
+            main > .second > div > img {
+                width: 30%;
+                height: 100%;
+                float: left;
+                margin: auto;
+            }
+
+            main > .second > div > div {
+                width: 70%;
+                height: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+                flex-direction: column;
+                justify-content: center;
+                line-height: 30px;
+                background: rgb(255, 198, 252);
+            }
+
+                main > .second > div > div > p {
+                    height: 30%;
+                    width: 90%;
+                    margin-left: 50px;
+                    justify-content: center;
+                    margin-top: 10px;
+                    margin-bottom: 0;
+                    /*text-indent: 2em;*/
+                    color: black;
+                    font-size: 20px;
+                    /*margin-bottom: 10px;*/
+                    /*font-weight: bold;*/
+                    font-style: italic;
+                    cursor: default;
+                }
+
+    /*third*/
+    main > .third {
+        width: 80%;
+        height: 500px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+        main > .third > h4 {
+            border-left: solid 10px rgb(247, 181, 244);
+            color: #353535;
+            text-indent: 1em;
+            cursor: default;
+            font-size: 24px;
+        }
+
+        main > .third > div {
+            width: 100%;
+            height: 80%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background: white;
+            border-radius: 20px;
+            margin-top: 10px;
+            overflow: hidden;
+        }
+
+            main > .third > div > img {
+                width: 30%;
+                height: 100%;
+                float: left;
+                margin: auto;
+            }
+
+            main > .third > div > div {
+                width: 70%;
+                height: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+                flex-direction: column;
+                justify-content: center;
+                line-height: 30px;
+                background: rgb(255, 198, 252);
+            }
+
+                main > .third > div > div > p {
+                    height: auto;
+                    width: 90%;
+                    margin-left: 50px;
+                    margin-top: 10px;
+                    margin-bottom: 0;
+                    justify-content: center;
+                    /*text-indent: 2em;*/
+                    color: black;
+                    font-size: 20px;
+                    /*margin-bottom: 10px;*/
+                    /*font-weight: bold;*/
+                    font-style: italic;
+                    cursor: default;
+                }
+
+
+
+/*footer*/
+footer {
+    height: 250px;
+    width: 100%;
+    background: white;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+    footer > .left {
+        width: 20%;
+        height: 50%;
+        margin-left: 20%;
+    }
+
+        footer > .left > img {
+            width: 50px;
+            height: 50px;
+        }
+
+    footer > .right {
+        width: 40%;
+        height: 90%;
+    }
+
+        footer > .right > h3 {
+            font-size: 24px;
+        }
+
+        footer > .right > .id {
+            margin-top: 5px;
+        }
+
+            footer > .right > .id > div {
+                margin-top: 5px;
+            }
+
+                footer > .right > .id > div > span {
+                    font-size: 20px;
+                    cursor: default;
+                }
+
+                footer > .right > .id > div > input {
+                    line-height: 18px;
+                    text-indent: 0.5em;
+                    font-size: 18px;
+                    outline: none;
+                    border: 0;
+                    border-radius: 10px;
+                    margin: 10px 0;
+                    background: rgba(12, 12, 12, 0.8);
+                }
+
+            footer > .right > .id > .btn {
+                margin-top: 10px;
+            }
+
+                footer > .right > .id > .btn > input {
+                    margin: 0 auto;
+                    background: rgba(0, 0, 0, 0.8);
+                    color: aliceblue;
+                    border: #333333;
+                    border-radius: 24px;
+                    font-size: 16px;
+                    cursor: pointer;
+                }

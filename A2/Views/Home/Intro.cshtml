@@ -1,0 +1,106 @@
+﻿@{
+    ViewBag.Title = "Contact";
+    Layout = "~/Views/Page2.cshtml";
+}
+<!--Navigation bar-->
+<header>
+    <img src="~/Content/img/Logo.jpg" alt="">
+    <ul>
+        <li><a href="~/Home/Index">Home</a></li>
+        <li><a href="~/Home/Intro">Intro</a></li>
+
+        <li><a href="~/Home/Relationship">Relationship</a></li>
+        <li>
+            Influence
+            <ul class="hidden">
+                <li><a href="~/Home/Products">Products</a></li>
+                <li><a href="~/Home/Style">Style</a></li>
+                <li><a href="~/Home/Jointly">Jointly</a></li>
+            </ul>
+        </li>
+        <li><a href="~/Home/About">About</a></li>
+        <li>@Html.ActionLink("View ", "Index", "Campus")</li>
+    </ul>
+    <div class="search">
+        <form action="" class="parent">
+            <input type="text" class="search" placeholder="Search"></input><!--行内块元素-->
+            <button><img src="~/Content/img/search.png" width="40px" height="34px"></button>
+        </form>
+    </div>
+</header>
+
+<div class="top">
+    <ul>
+        <li>
+            <img src="~/Content/img/family.jpg" alt="">
+        </li>
+        <li>
+            <img src="~/Content/img/3.jpg" alt="">
+        </li>
+    </ul>
+</div>
+
+<main>
+    <div class="first">
+        <h4>Introducation</h4>
+        <div>
+            <img src="~/Content/img/word.png" alt="">
+            <div>
+                <p>Hello Kitty (Japanese: ハローキティ; Latin: Har kiti), Japanese cartoon character, the Chinese translation of the market has titi cat, Hello Cat, Kitty Cat, Kitty Cat and other names. In addition, because Hello Kitty does not have a mouth, there is no mouth cat, no mouth cat alias on the Internet. She has this story. There is a little cat with a mouth, a round face, a bow tied in her left ear, and a small tail. Her name is Hello Kitty, Hello Kitty, Kitty Kitty, or no mouth. Kitty was born in 1974 as a little English girl named Kitty White, Scorpio, third year, has a pet cat named Charmmy Kitty, and a twin sister</p>
+            </div>
+
+        </div>
+    </div>
+    <div class="second">
+        <h4>Favorite</h4>
+        <div>
+            <img src="~/Content/img/favorite.jpg" alt="">
+            <div>
+                <p>Favorite thing: Like to listen to fairy tales, collect all kinds of beautiful and lovely small ornaments, candy, small stars, small goldfish, especially the butterfly to become the most, like to go to the park or forest with many good friends to play.</p>
+                <p>Favorite food: Mom's homemade apple pie, love bread from the uncle at the bakery in town.</p>
+                <p>Favorite clothes: In order to get around easily, lively Kitty always likes to wear masculine worker pants. But sometimes she would wear beautiful dresses and dresses and be very feminine</p>
+                <p>Future wish: She wants to be a great poet and pianist when I grow up.</p>
+            </div>
+        </div>
+    </div>
+    <div class="third">
+        <h4>Wrong meaning</h4>
+        <div>
+            <img src="~/Content/img/wrong.jpg" alt="">
+            <div>
+                <p>There is a misconception about Hello Kitty. The designer clarified that Hello Kitty is not a cat, but a girl.</p>
+                <p>Stina Kawyano, an anthropology professor at the University of Hawaii, wrote an introduction to Hello Kitty for the Japanese American National Museum in Los Angeles and used the phrase "It's a cat," which was harshly corrected by Sanrio, the company that created Hello Kitty: "Hello Kitty is not a cat! It's a little girl! She is never shown on all fours, walking and sitting like a two-legged creature." The company also gave a detailed description, saying that her real name is Kitty White, British roots, Scorpio, third grade, with a pet cat named Charmmy Kitty, and a twin sister...</p>
+            </div>
+        </div>
+    </div>
+</main>
+
+<footer>
+    <div class="left">
+        <img src="~/Content/img/footer.png" alt="">
+        <p>Copyright&copy;XXX</p>
+        <p>If there is infringement, </p>
+        <p></p>please contact delete.</p>
+        <p>Tel:188 8888 8888</p>
+        <p>E-mail:123456@email.com</p>
+
+    </div>
+    <div class="right">
+        <h3>CONTACT US</h3>
+        <div class="id">
+            <div>
+                <span>Name</span>
+                <br>
+                <input type="text" placeholder="XXX">
+            </div>
+            <div>
+                <span>Email</span>
+                <br>
+                <input type="text" placeholder="XXX">
+            </div>
+            <div class="btn">
+                <input type="submit" value="SEND">
+            </div>
+        </div>
+    </div>
+</footer>

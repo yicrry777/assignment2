@@ -1,0 +1,163 @@
+﻿@{
+    ViewBag.Title = "About";
+    Layout = "~/Views/Page3.cshtml";
+}
+<!--Navigation bar-->
+<header>
+    <img src="~/Content/img/Logo.jpg" alt="">
+    <ul>
+        <li><a href="~/Home/Index">Home</a></li>
+        <li><a href="~/Home/Intro">Intro</a></li>
+
+        <li><a href="~/Home/Relationship">Relationship</a></li>
+        <li>
+            Influence
+            <ul class="hidden">
+                <li><a href="~/Home/Products">Products</a></li>
+                <li><a href="~/Home/Style">Style</a></li>
+                <li><a href="~/Home/Jointly">Jointly</a></li>
+            </ul>
+        </li>
+        <li><a href="~/Home/About">About</a></li>
+        <li>@Html.ActionLink("View ", "Index", "Campus")</li>
+    </ul>
+    <div class="search">
+        <form action="" class="parent">
+            <input type="text" class="search" placeholder="Search"></input><!--行内块元素-->
+            <button><img src="~/Content/img/search.png" width="40px" height="34px"></button>
+        </form>
+    </div>
+
+</header>
+
+<div class="top">
+    <ul>
+        <li>
+            <img src="~/Content/img/family.jpg" alt="">
+        </li>
+        <li>
+            <img src="~/Content/img/3.jpg" alt="">
+        </li>
+    </ul>
+
+</div>
+
+<div class="main">
+    <div class="left">
+        <div>
+            <h4>Hello Kitty's family</h4>
+            <div>
+                <!--father-->
+                <img src="~/Content/img/father.jpg" alt="">
+                <p><strong>George White</strong>：He is a reliable father with a good sense of humor. He attaches great importance to his family, loves children very much, and loves smoking big pipes.</p>
+            </div>
+            <div>
+                <!--mather-->
+                <p><strong>Mary White</strong>：A kind mother, full of love and gentleness, she is an all-round housewife. She loves to plant flowers, cook and decorate the house. Kitty's favorite food is the apple pie made by her mother.</p>
+                <img src="~/Content/img/mather.jpg" alt="">
+            </div>
+            <div>
+                <!--sister-->
+                <img src="~/Content/img/sister.jpg" alt="">
+                <p><strong>Mimmy</strong>：Kitty's twin sister, who wears a yellow bow on her head, is very shy and homesick, loves to learn crafts from her grandmother, and often fantasizes about growing up to be a happy bride.</p>
+            </div>
+            <div>
+                <!--grandpa-->
+                <p><strong>Antony White</strong>：He is a very learned grandpa, has traveled to a lot of places, love painting, often wear painting tools to paint everywhere, often tell good stories to Kitty&Mimmy listen.</p>
+                <img src="~/Content/img/grandpa.jpg" alt="">
+            </div>
+            <div>
+                <!--grandma-->
+                <img src="~/Content/img/grandma.jpg" alt="">
+                <p><strong>Magaret White</strong>She is Kitty's grandmother, who is the best at making delicious puddings and loves to do crafts and embroidery in her rocking chair.：</p>
+            </div>
+        </div>
+        <div>
+            <h4>Hello Kitty's friends</h4>
+            <div>
+                <img src="~/Content/img/Joy.jpg" alt="">
+                <p><strong>Joy</strong>：Little mouse Joy (Joy) agile, love to play flower rope, curiosity is very strong.</p>
+            </div>
+            <div>
+                <p><strong>Fifi</strong>：Fifi the sheep is clear-headed and articulate, and always has a lot to do.</p>
+                <img src="~/Content/img/Fifi.jpg" alt="">
+            </div>
+            <div>
+                <img src="~/Content/img/Tippy.jpg" alt="">
+                <p><strong>Tippy</strong>：Tippy has been secretly in love with Kitty for a long time and wants to be her boyfriend to take care of her.</p>
+            </div>
+            <div>
+                <p><strong>Tainiy Chan</strong>：Tippy has been secretly in love with Kitty for a long time and wants to be her boyfriend to take care of her.</p>
+                <img src="~/Content/img/Tainiy.jpg" alt="">
+            </div>
+            <div>
+                <img src="~/Content/img/Judy.jpg" alt="">
+                <p><strong>Judy</strong>：The dog, Judy, likes reading very much. She is a very clever dog.</p>
+            </div>
+            <div>
+                <p><strong>Rory</strong>：Rory, a little raccoon, has a big bushy tail and often tells the secrets of the forest.</p>
+                <img src="~/Content/img/Rory.jpg" alt="">
+            </div>
+            <div>
+                <img src="~/Content/img/Terence.jpg" alt="">
+                <p><strong>Terence</strong>：Terence is often in a lot of trouble.</p>
+            </div>
+
+        </div>
+        <div class="boyfriend">
+            <h4>Hello Kitty's boyfriend</h4>
+            <div>
+                <img src="~/Content/img/Boyfriend.jpg" alt="">
+                <p><strong>Terence</strong>：4 cantaloupe high, 3 cantaloupe heavy, is a vigorous, love clean will dress up, will be deeply touched by small things boy.</p>
+            </div>
+        </div>
+    </div>
+
+
+    <!--Side character navigation-->
+    <div class="right">
+        <div>
+            <img src="~/Content/img/fam.jpg" alt="">
+            <span>family</span>
+        </div>
+        <div>
+            <img src="~/Content/img/fri.jpg" alt="">
+            <span>friends</span>
+        </div>
+        <div>
+            <img src="~/Content/img/Boy.jpg" alt="">
+            <span>boyfriend</span>
+        </div>
+    </div>
+</div>
+
+
+<footer>
+    <div class="left">
+        <img src="~/Content/img/footer.png" alt="">
+        <p>Copyright&copy;XXX</p>
+        <p>If there is infringement, </p>
+        <p></p>please contact delete.</p>
+        <p>Tel:188 8888 8888</p>
+        <p>E-mail:123456@email.com</p>
+
+    </div>
+    <div class="right">
+        <h3>CONTACT US</h3>
+        <div class="id">
+            <div>
+                <span>Name</span>
+                <br>
+                <input type="text" placeholder="XXX">
+            </div>
+            <div>
+                <span>Email</span>
+                <br>
+                <input type="text" placeholder="XXX">
+            </div>
+            <div class="btn">
+                <input type="submit" value="SEND">
+            </div>
+        </div>
+    </div>
+</footer>
